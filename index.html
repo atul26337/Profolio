@@ -2,27 +2,40 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<link rel="shortcut icon" href="assets/images/icon.png">
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1" />
-	<title>Atul Data Scince Portfolio </title>
-	<script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
-	<link rel="stylesheet" href="bower_components/foundation-sites/dist/css/foundation.min.css">
-	<link rel="stylesheet" href="">
-	<script src="bower_components/foundation-sites/dist/js/foundation.min.js" charset="utf-8"></script>
-	<script src="bower_components/normalize-css/normalize.css" charset="utf-8"></script>
-	<script src="bower_components/typed.js/dist/typed.min.js" charset="utf-8"></script>
-	<script src="bower_components/jqcloud2/dist/jqcloud.min.js" charset="utf-8"></script>
-	<link rel="stylesheet" href="bower_components/jqcloud2/dist/jqcloud.min.css">
-	<script src="bower_components/custombox/dist/custombox.min.js"></script>
-	<link href="bower_components/custombox/dist/custombox.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="assets/images/icon.png">
+	<title>Atul Data Science Portfolio</title>
+
+	<!-- FontAwesome -->
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500" rel="stylesheet">
+
+	<!-- CSS Libraries -->
+	<link rel="stylesheet" href="bower_components/foundation-sites/dist/css/foundation.min.css">
+	<link rel="stylesheet" href="bower_components/jqcloud2/dist/jqcloud.min.css">
+	<link rel="stylesheet" href="bower_components/custombox/dist/custombox.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/fonts/foundation-icons/foundation-icons.css">
 	<link rel="stylesheet" href="assets/styles/styles.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+	<!-- JavaScript Libraries -->
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/foundation-sites/dist/js/foundation.min.js"></script>
+	<script src="bower_components/typed.js/dist/typed.min.js"></script>
+	<script src="bower_components/jqcloud2/dist/jqcloud.min.js"></script>
+	<script src="bower_components/custombox/dist/custombox.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </head>
 
 <body>
@@ -30,157 +43,303 @@
 		<div class="thin-bar">
 		</div>
 
-		<section id="about">
-			<div class="row">
-				<div class="small-12 large-8 large-offset-2 columns text-center">
-					<img class="img-circle" src="assets/images/Atul.jpg" alt="headshot">
-					<div class="details">
-						<h2>Hi, I'm Atul Kumar. I...<br> <span id="writing-text"><span></h2>
+		<!-- About Section -->
+		<section id="about" class="py-5">
+			<div class="container text-center">
+				<!-- Profile Image and Intro -->
+				<div class="row mb-4">
+					<div class="col-12 col-lg-8 offset-lg-2">
+						<img class="img-circle" src="assets/images/Atul.jpg" alt="Atul Kumar headshot" />
+						<h2>Hi, I'm Atul Kumar.<br><span id="writing-text"></span></h2>
+					</div>
+				</div>
+		
+				<!-- Call to Action Button -->
+				<div class="row mb-4">
+					<div class="col-12">
+						<div class="cta">
+							<a class="btn btn-primary cta-button" href="mailto:Atulkumar26337@gmail.com">Get In Touch</a>
+						</div>
+					</div>
+				</div>
+		
+				<!-- Social Icons -->
+				<div class="row">
+					<div class="col-12">
+						<div class="social-icons">
+							<a href="https://github.com/atul26337" class="social-icon"><i class="fa fa-github-alt fa-2x"></i></a>
+							<a href="www.linkedin.com/in/atul-kumar-43b43a141" class="social-icon"><i class="fa fa-linkedin"></i></a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="small-12 column">
-					<div class="cta text-center">
-						<a class="my-button cta-button expand form-button" href="mailto:Atulkumar26337@gmail.com">Get In Touch</a>
-					</div>
-				</div>
-				<div class="small-12 column">
-					<div class="my-arrow-div text-center">
-						<a href="https://github.com/atul26337"><i class="fa fa-github-alt fa-2x"></i></a>
-						<a href=" "><i class="fa fa-youtube fa-2x"></i></a>
-					</div>
-				</div>
-			</div>
+		</section>
+		
 
+		<!-- Professional Summary Section -->
+		<section id="professional-summary" class="py-5 bg-light">
+			<div class="container">
+				<!-- Section Heading -->
+				<div class="row text-center mb-4">
+					<div class="col">
+						<h2 class="display-4 text-primary">Professional Summary</h2>
+					</div>
+				</div>
+
+				<!-- Summary Content -->
+				<div class="row">
+					<div class="col-12">
+						<p class="lead text-muted" >
+							Dedicated Senior Software Developer with over 5 years of experience in designing and
+							implementing scalable microservices architectures. Proven ability to lead teams and enhance
+							application performance through innovative solutions. Strong expertise in backend
+							development, cloud technologies, and customer engagement strategies. Consistently recognized
+							for improving system reliability and driving efficient project outcomes.
+						</p>
+					</div>
+				</div>
+			</div>
 		</section>
 
-
-		<section id="experience">
-
-			<div class="row column">
-				<div class="small-12">
-					<h2 class="text-center">My Experience</h2>
-					<p class="text-center tag-line">Specialist in need. Generalist at heart.</p>
+		<!-- Education Section -->
+		<section id="education" class="py-5">
+			<div class="container">
+				<!-- Section Heading -->
+				<div class="row text-center mb-4">
+					<div class="col">
+						<h2 class="display-4 text-primary">Education</h2>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-			
-				<div class="small-12 medium-4 columns text-center experience-topics">
-					<i class="fi-laptop"></i>
-					<h3>Programming languages</h3>
-					<ul>
-					    <li>Python</li>
-					    <li>Java</li>
-					</ul>
-					<h3>Front-end</h3>
-					<ul>
-						<li>html(5)</li>
-						<li>css(3)</li>
-						<li>Java Script</li>
-						
-					</ul>
-					
-					<h3>Back-end</h3>
-					<ul>
-					
-				
-						<li>Flask | Python</li>
-					</ul>
-				</div>
-				<div class="small-12 medium-4 columns text-center experience-topics">
-					<i class="fi-database"></i>
-					<h3>Machine learning Algo.</h3>
-					<ul>
-					    <li>SVM.</li>
-					    <li>kNN.</li>
-					    <li>K-Means.</li>
-                        <li>Naive Bayes.</li>
-                        <li>Decision Tree.</li>
-                        <li>Random Forest.</li>
-						<li>Linear Regression.</li>
-						<li>Logistic Regression.</li>
+
+				<!-- Education Content -->
+				<div class="row">
+					<div class="col-12">
+						<ul class="list-unstyled">
+							<li>
+								<h5><strong>Shoolini University</strong></h5>
+								<p>Bachelor of Computer Science, OGPA: 8.5</p>
+							</li>
+							<li>
+								<h5><strong>Senior Secondary Examination</strong></h5>
+								<p>Himachal Pradesh Board of School Education, Score: 61%</p>
+							</li>
 						</ul>
-					
-						
-				</div>
-				<div class="small-12 medium-4 columns text-center experience-topics">
-					<i class="fi-star"></i>
-					<h3>Machine learning and Deep learning libaries</h3>
-					<ul>
-						<li>Tensorflow</li>
-						<li>keras</li>
-						<li>Atom || Webstorm</li>
-						<li>Github && Bitbucket</li>
-						
-					</ul>
-					<h3>Tools</h3>
-					<ul>
-						<li>Anaconda || Jupyter</li>
-						<li>Atom</li>
-						<li>Github </li>
-						
-					</ul>
-					<h3>Deployment Platform</h3>
-					<ul>
-						<li>Heroku</li>
-						<li>Google Cloud Platform</li>
-						<li>Amzone EC2 Instance</li>
-						
-					</ul>
-				</div>
-			
-			</div>
-			
-
-		</section>
-
-		<section id="work">
-			<h2 class="text-center">Work</h2>
-			<div class="row">
-				<p class="text-center tag-line">Here are few of my  Project.</p>
-			</div>
-
-
-			<div class="row work-row"> <!-- odd -->
-				<div class="small-12 medium-6 medium-push-6 columns">
-					<img src="assets/images/Capture.JPG" alt="">
-				</div>
-				<div class="small-12 medium-5 medium-pull-7 columns">
-					<div class="details details-ftm">
-						<h3>sentiment analysis web application</h3>
-						<p class="platform">Web</p>
-						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-						<p>Web Application for Analysis Sentiments of customer on Product based on Reviews.</p>
-						<a class="my-button" target="_blank" href="https://sentiment-anlaysis.herokuapp.com/">Visit Website</a>
 					</div>
 				</div>
 			</div>
-			
-			<div class="row work-row"> <!-- odd -->
-				
-				<div class="small-12 medium-5 medium-pull-7 columns">
-					<div class="details details-ftm">
-						<h3>sentiment analysis web application</h3>
-						<p class="platform">Web</p>
-						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-						<p>Web Application for Analysis Sentiments of customer on Product based on Reviews.</p>
-						<a class="my-button" target="_blank" href="https://sentiment-anlaysis.herokuapp.com/">Visit Website</a>
+		</section>
+
+
+
+
+		<section id="experience" class="py-5">
+			<div class="container">
+				<!-- Section Heading -->
+				<div class="row text-center mb-5">
+					<div class="col">
+						<h2 class="display-4">Experience</h2>
 					</div>
 				</div>
-				<div class="small-12 medium-6 medium-push-6 columns">
-					<img src="assets/images/Capture.JPG" alt="">
+
+				<!-- Experience Entries -->
+				<div class="row">
+					<!-- Senior Software Developer (2022-Current) -->
+					<div class="col-12 mb-4">
+						<div class="card shadow-lg border-0">
+							<div class="card-body">
+								<h3 class="card-title text-primary">Senior Software Developer</h3>
+								<h5 class="card-subtitle text-muted">FPL Technologies, Pune (2022 - Current)</h5>
+								<ul class="list-unstyled mt-3">
+									<li><strong>Microservices Architecture:</strong> Designed and developed core
+										microservices like Auth-Service for authentication/authorization and Bank-BFF
+										for web-based applications, improving system modularity and reducing development
+										time by 30%.</li>
+									<li><strong>Team Leadership:</strong> Led a team of three developers to architect
+										and develop the backend for the Wizmo App, enabling seamless investment product
+										sales and management.</li>
+									<li><strong>Feature Development:</strong> Implemented rate limiters and circuit
+										breakers using resilience4j to enhance application reliability and reducing
+										downtime by 20%.</li>
+									<li><strong>Backend for Frontend (BFF):</strong> Optimized BFF services to support
+										authentication, authorization, and multi-bank credit card onboarding, resulting
+										in a 40% improvement in user engagement.</li>
+									<li><strong>Framework Upgrade:</strong> Upgraded Micronaut from version 1.2 to 3.10,
+										reducing server requirements from 6 AWS m4.large servers to 4, decreasing
+										latency from 1 second to just 30 milliseconds, significantly enhancing
+										performance and cost efficiency.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<!-- Software Developer (2020-2022) -->
+					<div class="col-12 mb-4">
+						<div class="card shadow-lg border-0">
+							<div class="card-body">
+								<h3 class="card-title text-primary">Software Developer</h3>
+								<h5 class="card-subtitle text-muted">FPL Technologies, Pune (2020 - 2022)</h5>
+								<ul class="list-unstyled mt-3">
+									<li><strong>Bank Integration:</strong> Led backend integration with South Indian
+										Bank and Federal Bank, expanding product reach and improving collaboration with
+										financial institutions, contributing to a 60% increase in card issuance volume.
+									</li>
+									<li><strong>Customer Engagement:</strong> Initiated the development of a dedicated
+										WhatsApp communication channel for customer support, enhancing customer
+										interaction and increasing satisfaction ratings by 25%.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
-
-
 		</section>
+
+
+
+
+
+
+
+		<section id="skills" class="py-5 bg-light">
+			<div class="container">
+				<div class="row text-center mb-4">
+					<div class="col">
+						<h2 class="text-primary">Skills</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<ul class="list-group">
+							<li class="list-group-item">Programming Languages: Java, SQL, Python (Basic)</li>
+							<li class="list-group-item">Frameworks & Libraries: Micronaut, Spring Boot</li>
+							<li class="list-group-item">Database Management: PSQL</li>
+							<li class="list-group-item">Cloud Platform: AWS</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<ul class="list-group">
+							<li class="list-group-item">Caching: Redis</li>
+							<li class="list-group-item">Workflow: Uber Cadence/Temporal</li>
+							<li class="list-group-item">Performance Tuning</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Projects Section -->
+		<section id="projects" class="py-5 bg-light">
+			<div class="container">
+				<!-- Section Heading -->
+				<div class="row text-center mb-4">
+					<div class="col">
+						<h2>Projects</h2>
+						<p class="tag-line">Here are a few of my recent projects</p>
+					</div>
+				</div>
+
+				<!-- Projects List -->
+				<div class="row gy-5 justify-content-start">
+					<!-- Wizmo App Project -->
+					<div class="col-md-3 mb-4">
+						<div class="card">
+							<img src="assets/images/pixel_23.png" class="card-img-top" alt="Wizmo App Screenshot">
+							<div class="card-body">
+								<h5 class="card-title">Wizmo App</h5>
+								<p class="card-text">Backend for Digital Gold and Digital FD</p>
+								<p>Architected and developed the backend infrastructure for Wizmo, a platform enabling
+									the buying and selling of digital gold and fixed deposits (FDs). Integrated secure
+									financial transaction systems and optimized API services for seamless user
+									interactions.</p>
+								<a href="https://wizely.in/" target="_blank" class="btn btn-primary">Visit Website</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Sentiment Analysis Project -->
+					<div class="col-md-3 mb-4">
+						<div class="card">
+							<img src="assets/images/bankruptcy-john.jpg" class="card-img-top"
+								alt="Sentiment Analysis Logo">
+							<div class="card-body">
+								<h5 class="card-title">Sentiment Analysis Web Application</h5>
+								<p class="card-text">Web</p>
+								<p>A web application that analyzes customer sentiments based on product reviews. This
+									project utilizes machine learning techniques for sentiment classification and helps
+									businesses improve customer engagement.</p>
+								<a href="https://sentiment-pro-3.onrender.com/" target="_blank"
+									class="btn btn-primary">Visit Website</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- OneCard Project -->
+					<div class="col-md-3 mb-4">
+						<div class="card">
+							<img src="assets/images/onecard.png" class="card-img-top" alt="OneCard Logo">
+							<div class="card-body">
+								<h5 class="card-title">OneCard Backend</h5>
+								<p class="card-text">Backend for Credit Card Platform</p>
+								<p>Developed the backend for OneCard, a platform that issues credit cards on behalf of
+									bank partners. Integrated with various financial institutions to streamline card
+									processing and improve system performance.</p>
+								<a href="https://www.getonecard.app/" target="_blank" class="btn btn-primary">Visit
+									Website</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- OneScore Project -->
+					<div class="col-md-3 mb-4">
+						<div class="card">
+							<img src="assets/images/Fitable_PNGs_01.png" class="card-img-top" alt="OneScore Logo">
+							<div class="card-body">
+								<h5 class="card-title">OneScore Backend</h5>
+								<p class="card-text">Backend for Credit Score Platform</p>
+								<p>Developed the backend for OneScore, a platform providing users with access to their
+									Experian and CIBIL credit scores. Enhanced data management and integrated with
+									various credit score agencies for seamless data retrieval.</p>
+								<a href="https://www.onescore.app/" target="_blank" class="btn btn-primary">Visit
+									Website</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+		<!-- techer Section -->
 
 		<section id="teaching">
 			<h2 class="text-center">Teaching</h2>
 			<div class="row">
 				<div class="small-12 medium-8 medium-offset-2">
-					<p class="text-center tag-line">In the last couple of years, I've taught programming to hundreds of students both privately in person and remotely. Here are some of the domains I've helped students with...</p>
+					<p class="text-center tag-line">In the last couple of years, I've taught programming to hundreds of
+						students both privately in person and remotely. Here are some of the domains I've helped
+						students with...</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 medium-8 medium-offset-2 columns">
+					<div class="teaching-list">
+						<ul>
+							<li>Java Programming</li>
+							<li>Data Structures and Algorithms</li>
+							<li>Web Development (HTML, CSS, JavaScript)</li>
+							<li>Backend Development (Java, Micronaut, Spring Boot)</li>
+							<li>Database Management (SQL, PostgreSQL)</li>
+							<li>Software Engineering</li>
+							<li>Cloud Computing (AWS, Azure)</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="row">
@@ -191,31 +350,31 @@
 			</div>
 		</section>
 
-		<section id="footer-cta">
-			<h2 class="text-center">Wanna work with me?</h2>
-			<p></p>
-			<div class="row text-center">
-				<div class="small-12 medium-8 medium-offset-2 columns">
-					<p class="text-center">I'm currently available for work.</p>
-				</div>
-				<div class="small-12 columns" id="startButtonDiv">
-					<a class="my-button form-button" href="mailto:Atulkumar26337@gmail.com">Start Now</a>
+
+		<section id="footer-cta" class="py-5 bg-light">
+			<div class="container text-center">
+				<h2 class="h3 mb-4">Wanna work with me?</h2>
+				<p class="mb-4">I'm currently available for work. Feel free to reach out!</p>
+				<div class="row justify-content-center">
+					<div class="col-12 col-md-8">
+						<p>I'm currently available for work.</p>
+					</div>
+					<div class="col-12">
+						<a class="btn btn-primary btn-lg" href="mailto:Atulkumar26337@gmail.com">Start Now</a>
+					</div>
 				</div>
 			</div>
 		</section>
-
-		<footer id="footer">
-			<div class="row text-center">
-				<div class="small-12 medium-6 medium-offset-3 columns">
-					<p id="logo">AK</p>
-					<p id="copyright">Copyright &copy; 2019 | Atul Kumar</p>
-				</div>
+		
+		<footer id="footer" class="bg-dark text-white py-3">
+			<div class="container text-center">
+				<p id="logo" class="h4 mb-2">AK</p>
+				<p id="copyright" class="mb-0">Copyright &copy; 2024 | Atul Kumar</p>
 			</div>
 		</footer>
-
-
-
+		
 	</div>
+
 	<script src="assets/scripts/app.js" charset="utf-8"></script>
 </body>
 

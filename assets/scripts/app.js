@@ -2,34 +2,34 @@ const Portfolio = function() {
 	function makeWords() {
 		var words = [
 			{
-				text: "rapping",
+				text: "JAVA",
 				weight: 12.3
 			}, {
-				text: "css3",
+				text: "PYTHON",
 				weight: 8
 			}, {
-				text: "javascript",
+				text: "AWS",
 				weight: 14
 			}, {
-				text: "jquery",
-				weight: 3
+				text: "SPRING",
+				weight: 6
 			}, {
-				text: "programming",
+				text: "MICRONAUT",
 				weight: 7
 			}, {
-				text: "python",
+				text: "SYSTEM DESIGN",
 				weight: 10
 			}, {
-				text: "java",
-				weight: 9
+				text: "DS ALGO",
+				weight: 4
 			}, {
-				text: "qazi",
+				text: "PSQL",
 				weight: 15
 			}, {
-				text: "newText",
+				text: "GARDLE",
 				weight: 7
 			},{
-               text: "Atul",
+               text: "WORKFLOW ENGINE",
 				weight: 7 
             }
             
@@ -38,7 +38,7 @@ const Portfolio = function() {
 	}
 
 	function makeWordCloud(words) {
-		$('.teaching-domains').jQCloud(words, {delay: 120});
+		$('.teaching-domains').jQCloud(words, {delay: 10});
 	}
 
 	function displayWordCloud() {
@@ -61,7 +61,7 @@ const Portfolio = function() {
 	function typeAnimation() {
 		Typed.new("#writing-text", {
 			strings: [
-				"I am a data scientist .", "love everything about code.", "also teach programming to people.", "solve problems."
+				"I am a backend developer with data science skills .", "love everything about code.", "also teach programming to people.", "solve problems."
 			],
 			// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 			stringsElement: null,

@@ -1,335 +1,593 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700');
-
-/*********** Global Styles********/
-
-body, html {
-		background-color: #E3E3E3;
+/* Global Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #fafafa; /* Light background */
+    margin: 0;
+    padding: 0;
+    color: #212121; /* Dark text color for better readability */
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Lato", sans-serif !important;
-	font-weight: 900 !important;
+    font-family: 'Maven Pro', sans-serif;
+    color: #333;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header and Navigation */
 .wrapper {
-		background: #E3E3E3;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for header */
 }
-
-.img-circle {
-		border-radius: 50%;
-}
-
-.my-button {
-		font-size: 1em;
-		line-height: normal;
-		text-transform: uppercase;
-		font-family: 'Lato', sans-serif;
-		font-weight: 900;
-		-webkit-transition: all .3s ease-in-out;
-		transition: all .3s ease-in-out, color 0.2s 0.3s;
-		letter-spacing: 0;
-		border-radius: 45px;
-		height: auto;
-		padding: .8em 2.1em;
-}
-
-.my-button:hover {
-	cursor: pointer;
-	padding: .8em 2.7em;
-}
-
-.my-button:active,
-.my-button:focus,
-.my-button.active {
-  background-image: none;
-  outline: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-/*#my-modal {
-	display: none;
-}
-
-.my-form {
-	margin-top: 20em;
-}
-
-.custombox-content {
-	background: #212332;
-}*/
-
-/**********************************/
-
-
-/*** thin bar ***/
 
 .thin-bar {
-		border-bottom: 5px solid #F33F12;
+    height: 2px;
+    background-color: #3f51b5; /* Material blue */
 }
 
-
-/*** About Section ***/
-
+/* About Section */
 #about {
-		margin-top: 10em;
-		border: 1px solid #eee;
-		background-color: white;
-		padding-bottom: 1em;
+    background-color: #fff;
+    padding: 50px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 #about img {
-		max-width: 15em;
-		position: relative;
-		bottom: 7.5em;
-}
-
-#about .details {
-		margin-top: -2em;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
 #about h2 {
-		color: #646464;
-		font-size: 3.8em;
-		padding-bottom: 1em;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #3f51b5; /* Material blue */
 }
 
-#about span {
-		font-weight: 300;
-		font-size: .7em;
+#about .cta-button {
+    font-size: 1.25rem;
+    padding: 12px 30px;
+    border-radius: 50px;
+    background-color: #3f51b5;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s;
 }
 
-#about h5 {
-		color: #8A8A8B;
+#about .cta-button:hover {
+    background-color: #303f9f;
 }
 
-#about p {
-		margin-top: 1em;
-		color: #646464;
-		font-family: "roboto";
-		font-weight: 300;
+#about .social-icons {
+    margin-top: 20px;
 }
 
-.cta .cta-button {
-		color: #cc4b37;
-		text-transform: uppercase;
-		border: 2px solid rgba(255, 103, 68, 0.91);
-		border-radius: 50px;
-		background: white;
+#about .social-icon {
+    margin: 0 10px;
+    color: #333;
+    font-size: 2rem;
+    transition: color 0.3s;
 }
 
-.cta .cta-button:hover, .cta .cta-button:focus {
-		box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);
-		background-color: rgba(255, 103, 68, 0.91);
-		color: white;
+#about .social-icon:hover {
+    color: #3f51b5;
 }
 
-#about i {
-	margin-top: 2em;
+/* Professional Summary Section */
+#professional-summary {
+    /* background: linear-gradient(135deg, #23272a, #bbdefb); Soft blue gradient for a Material feel */
+    padding: 60px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center text */
+    height: 100%; /* Ensure full height of section */
 }
 
-.fa {
-	font-size: 1.2em;
-	padding: 0.1em 0.4em;
-	color: #8a8a8a;
+#professional-summary:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Shadow increases on hover */
 }
 
-.fa:hover {
-	cursor: pointer;
+#professional-summary .lead {
+    font-size: 1.5rem; /* Larger font for better visibility */
+    line-height: 1.8;
+    color: #37474f; /* Darker text for better contrast */
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 
-/*** Experience ***/
+#professional-summary h2 {
+    font-size: 2rem;
+    color: #3f51b5; /* Material blue for headers */
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#professional-summary .cta-button {
+    font-size: 1.25rem;
+    padding: 12px 30px;
+    border-radius: 50px;
+    background-color: #3f51b5;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+#professional-summary .cta-button:hover {
+    background-color: #303f9f;
+    transform: translateY(-3px); /* Button lifts on hover */
+}
+
+
+/* Education Section */
+#education {
+    padding: 60px 20px;
+    background-color: #fafafa; /* Light grey background */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#education h5 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #6200ea; /* Purple accent color for Material Design */
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#education ul {
+    padding: 0; /* Remove default padding */
+    list-style-type: none;
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Optional: Set a max-width for better appearance on larger screens */
+}
+
+#education li {
+    margin-bottom: 15px;
+    padding: 20px; /* Increased padding for better spacing */
+    font-size: 1.1rem;
+    color: #333;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Take up full width of the container */
+    text-align: left; /* Align text to the left for readability */
+}
+
+#education li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+#education li strong {
+    color: #3f51b5; /* Blue accent for important text */
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    #education {
+        padding: 40px 15px;
+    }
+
+    #education h5 {
+        font-size: 1.3rem;
+    }
+
+    #education li {
+        font-size: 1rem;
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
+
+
+
+/* Experience Section */
 #experience {
-	background-color: #4c6d86;
-	padding: 6em 4em 5.6em;
+    background-color: #fafafa; /* Light background */
+    padding: 60px 0;
 }
 
-#experience h2 {
-	color: #fff;
-	margin-bottom: .7em;
+#experience .container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-#experience .tag-line {
-	color: white;
-	font-size: 1.4em;
+#experience .row.text-center.mb-5 h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #3f51b5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
 }
 
-#experience i {
-	color: rgb(255, 138, 89);
-	font-size: 4em;
+#experience .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 30px;
+    background-color: #fff;
 }
 
-#experience h3 {
-	color: #fff;
+#experience .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.experience-topics p {
-	color: #ACAEB2;
-	font-family: "Maven pro", sans-serif;
-	/*font-weight: 500;*/
+#experience .card-body {
+    padding: 30px;
 }
 
-.experience-topics ul li {
-	list-style: none;
-	color: #bbd2ff;
-	font-family: "Maven pro", sans-serif;
-	font-weight: 500;
+#experience .card-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #3f51b5; /* Material blue */
 }
 
-/*** work ***/
-#work {
-	padding: 6em 4em 3em;
-	background-color: #fff;
+#experience .card-subtitle {
+    font-size: 1.1rem;
+    color: #757575; /* Light gray */
+    margin-bottom: 20px;
 }
 
-#work h2 {
-	color: #FF6945;
-	margin-bottom: .7em;
+#experience .card-body ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#experience .card-body ul li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+#experience .card-body ul li strong {
+    color: #3f51b5; /* Material blue */
+}
+
+/* Card Hover Effects */
+#experience .card-body ul li:hover {
+    background-color: #f1f1f1;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+#skills .list-group-item {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 20px; /* Adjust padding for better spacing */
+    background-color: #fafafa; /* Light grey background for Material Design */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+}
+#projects h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3f51b5;
+    margin-bottom: 20px;
+}
+#projects h5 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #6200ea; /* Purple accent color matching #education */
+    margin-bottom: 30px;
+    text-align: center; /* Center align header */
+    letter-spacing: 1px;
+}
+
+#projects .card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#projects .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+#projects .card-img-top {
+    height: 200px;
+    object-fit: cover; /* Ensures consistent image sizing */
+}
+
+#projects .card-body {
+    padding: 20px;
+}
+
+#projects .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #3f51b5; /* Blue accent color for Material Design */
+    margin-bottom: 10px;
+}
+
+#projects .card-text {
+    font-size: 1rem;
+    color: #757575; /* Muted text color for descriptions */
+    margin-bottom: 20px;
+}
+
+#projects .btn-primary {
+    background-color: #3f51b5; /* Blue accent button */
+    border: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    text-transform: uppercase; /* Button text style for Material Design */
+}
+
+#projects .btn-primary:hover {
+    background-color: #303f9f; /* Darker blue for hover effect */
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    #projects {
+        padding: 40px 15px;
+    }
+
+    #projects h5 {
+        font-size: 1.3rem;
+    }
+
+    #projects .card-img-top {
+        height: 150px; /* Adjust image height for smaller screens */
+    }
+
+    #projects .card-title {
+        font-size: 1.1rem;
+    }
+
+    #projects .card-text {
+        font-size: 0.9rem;
+    }
 }
 
 
-#work .tag-line {
-	color: #767779;
-	font-size: 1.4em;
-	margin-bottom: 4em;
-}
-
-#work .work-row {
-	margin-bottom: 5.5em;
-}
-
-.details h3 {
-	color: #738182;
-	text-transform: uppercase;
-}
-
-.details .platform{
-	font-size: 0.8em;
-	text-transform: uppercase;
-	margin: 2em 0 -0.1em;
-	font-family: "Maven pro", sans-serif;
-	font-weight: 500;
-	color: #ff7654;
-}
-
-.details i {
-	color: #ff7654;
-	margin-right: 1em;
-}
-
-.details p {
-	color: #738182;
-	font-family: "Maven pro", sans-serif;
-	font-weight: 500;
-	font-size: 1.2em;
-	margin-bottom: 1.8em;
-}
-
-.details a, .details a:link, .details a:active{
-		color: rgba(255, 103, 68, 0.91);
-		border: 2px solid rgba(255, 103, 68, 0.91) !important;
-		background-color: #fff;
-}
-
-.details a:hover, .details a:focus {
-		/*box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);*/
-		background-color: rgba(255, 103, 68, 0.91) !important;
-		color: #fff;
-}
-
-/*** teaching ***/
+/* Teaching Section */
 #teaching {
-	padding: 6em 4em 3em;
+    padding: 50px 0;
+    background-color: #fafafa;
 }
 
 #teaching h2 {
-	color: #595959;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3f51b5;
+    margin-bottom: 20px;
 }
 
-#teaching .tag-line {
-	color: #848282;
-	font-size: 1.4em;
+#teaching .teaching-list ul {
+    padding-left: 20px;
 }
 
-#teaching .teaching-domains {
-	height: 500px;
-	width: auto;
-	margin-top: -4em;
+#teaching .teaching-list li {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*** Footer Call-to-action ***/
+/* Footer Call-to-Action (CTA) Section */
 #footer-cta {
-	background-color: rgba(255, 103, 68, 0.91);
-	padding: 6em 4em 5.6em;
+    padding: 50px 20px;
+    background-color: #fff; /* Material Design purple */
+    color: #3f51b5;
+    text-align: center; /* Center-align content for better presentation */
 }
 
 #footer-cta h2 {
-	color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+	color: #3f51b5; /* Material Design purple */
+    margin-bottom: 20px;
+    letter-spacing: 1px; /* Add spacing for elegance */
 }
 
 #footer-cta p {
-	color: #fff;
-	font-family: "Maven pro", sans-serif;
-	font-weight: 500;
-	font-size: 1.2em;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #3f51b5;
 }
 
-#startButtonDiv {
-	margin-top: 3em;
+#footer-cta .btn-lg {
+    background-color: #1a237e; /* Darker purple for button */
+    border: none;
+    padding: 12px 40px;
+    font-size: 1.25rem;
+    border-radius: 50px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase; /* Material Design button style */
+    letter-spacing: 0.5px;
 }
 
-#footer-cta a {
-	border: 2px solid #fff;
-	border-radius: 45px;
-	color: #fff;
+#footer-cta .btn-lg:hover {
+    background-color: #0d133c; /* Even darker shade for hover effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-#footer-cta a:hover {
-	background: #fff;
-	color: rgba(255, 103, 68, 0.91);
-	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);
-}
-
-/*** footer starts ***/
-
+/* Footer Section */
 #footer {
-	padding: 5em 4em 2em;
+    background-color: #212121; /* Dark background */
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center; /* Center-align for footer content */
 }
 
 #footer #logo {
-	background-color: rgba(255, 103, 68, 0.91);
-	border-radius: 50%;
-	color: #fff;
-	padding: .4em;
-	font-family: "Maven pro", sans-serif;
-	font-size: 1.6em;
-	font-weight: 500;
-	display: inline;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #f5f5f5; /* Slightly lighter white for better visibility */
 }
 
 #footer #copyright {
-	margin-top: 1.6em;
-	font-family: "Maven pro", sans-serif;
-	font-weight: 500;
-	color: #7d7d7d;
+    font-size: 1rem;
+    color: #bdbdbd; /* Soft grey for text */
+    margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* General adjustments */
+    body {
+        font-size: 0.9rem; /* Make text slightly smaller for mobile */
+    }
+
+    /* About Section */
+    #about img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #about h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Projects Section */
+    #projects .col-md-3 {
+        flex: 0 0 48%;
+        max-width: 48%;
+        margin-bottom: 20px;
+    }
+
+    #projects .btn-primary {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    /* Skills Section */
+    #skills .list-group-item {
+        font-size: 1rem;
+    }
+
+    /* Footer-CTA Section */
+    #footer-cta h2 {
+        font-size: 1.8rem;
+    }
+
+    #footer-cta p {
+        font-size: 1rem;
+    }
+
+    #footer-cta .btn-lg {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    /* Footer Section */
+    #footer #logo {
+        font-size: 1.8rem;
+    }
+
+    #footer #copyright {
+        font-size: 0.9rem;
+    }
+}
+
+/* Improved Colors */
+body {
+    background-color: #f9f9f9; /* Soft grey background for overall UI */
+    color: #333; /* Default text color */
+}
+
+a {
+    color: #3f51b5; /* Material Design blue for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #1a237e; /* Darker blue for hover effect */
+}
+
+
+
+#teaching .teaching-domains {
+    height: 700px;
+    width: 100%;
+    margin-top: -4em;
+    padding: 1em;
+    overflow: hidden;
+}
+
+#teaching .teaching-domains ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#teaching .teaching-domains li {
+    font-size: 16px;
+	margin-right: auto;
+    margin-left: auto;
+    font-family: 'Lato', sans-serif;
+    margin: 5px;
+}
+
+#teaching .teaching-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#teaching .teaching-list li {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #3498db;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+#teaching .teaching-list li:hover {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transform: translateX(10px);
+}
+
+#teaching .teaching-list li:first-child {
+    margin-top: 0;
+}
+
+#teaching .teaching-list li:last-child {
+    margin-bottom: 0;
 }
